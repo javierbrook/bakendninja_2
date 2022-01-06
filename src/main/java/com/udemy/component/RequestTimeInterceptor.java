@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.component;
+package com.udemy.component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

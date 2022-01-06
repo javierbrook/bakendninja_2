@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.model;
+package com.udemy.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

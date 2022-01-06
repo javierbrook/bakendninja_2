@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.udemy</groupId>
-	<artifactId>bakendninja_3</artifactId>
+	<artifactId>bakendninja_2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bakendninja_3</name>
+	<name>bakendninja_2</name>
 	<description>Proyecto del curso</description>
 
 	<properties>
@@ -60,11 +60,11 @@
 		<dependency>
 		  <groupId>com.querydsl</groupId>
 		  <artifactId>querydsl-jpa</artifactId>
-		  </dependency>
-		<dependency>
-		  <groupId>org.slf4j</groupId>
-		  <artifactId>slf4j-log4j12</artifactId>
 		</dependency>
+		<dependency>
+	      <groupId>org.springframework.boot</groupId>
+	      <artifactId>spring-boot-starter-security</artifactId>
+	    </dependency>
 		
 	</dependencies>
 

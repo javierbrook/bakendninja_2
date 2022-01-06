@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.controller;
+package com.udemy.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 
-import com.udemy.bakendninja_2.constant.ViewConstant;
-import com.udemy.bakendninja_2.model.UserCredential;
+import com.udemy.constant.ViewConstant;
+import com.udemy.model.UserCredential;
 
 import lombok.extern.java.Log;
 

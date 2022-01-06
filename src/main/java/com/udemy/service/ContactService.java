@@ -1,8 +1,8 @@
-package com.udemy.bakendninja_2.service;
+package com.udemy.service;
 
 import java.util.List;
 
-import com.udemy.bakendninja_2.model.ContactModel;
+import com.udemy.model.ContactModel;
 
 public interface ContactService {
 	

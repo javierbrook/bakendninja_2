@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.entity;
+package com.udemy.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

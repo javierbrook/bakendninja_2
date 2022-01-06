@@ -1,9 +1,9 @@
-package com.udemy.bakendninja_2.converter;
+package com.udemy.converter;
 
 import org.springframework.stereotype.Component;
 
-import com.udemy.bakendninja_2.entity.Contact;
-import com.udemy.bakendninja_2.model.ContactModel;
+import com.udemy.entity.Contact;
+import com.udemy.model.ContactModel;
 
 @Component
 public class ContactConverter {

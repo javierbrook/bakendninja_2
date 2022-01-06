@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.entity;
+package com.udemy.entity;
 
 import java.util.HashSet;
 import java.util.Set;

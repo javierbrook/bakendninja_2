@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.service.impl;
+package com.udemy.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.udemy.bakendninja_2.converter.ContactConverter;
-import com.udemy.bakendninja_2.entity.Contact;
-import com.udemy.bakendninja_2.model.ContactModel;
-import com.udemy.bakendninja_2.repository.ContactRepository;
-import com.udemy.bakendninja_2.service.ContactService;
+import com.udemy.converter.ContactConverter;
+import com.udemy.entity.Contact;
+import com.udemy.model.ContactModel;
+import com.udemy.repository.ContactRepository;
+import com.udemy.service.ContactService;
 
 @Service
 public class ContactServiceImpl implements ContactService{

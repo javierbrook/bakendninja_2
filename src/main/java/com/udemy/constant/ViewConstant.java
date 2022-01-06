@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.constant;
+package com.udemy.constant;
 
 public class ViewConstant {
 

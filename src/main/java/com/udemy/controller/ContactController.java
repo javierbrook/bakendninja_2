@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.controller;
+package com.udemy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.udemy.bakendninja_2.constant.ViewConstant;
-import com.udemy.bakendninja_2.model.ContactModel;
-import com.udemy.bakendninja_2.service.ContactService;
+import com.udemy.constant.ViewConstant;
+import com.udemy.model.ContactModel;
+import com.udemy.service.ContactService;
 
 import lombok.extern.java.Log;
 

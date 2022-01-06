@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2.configuration;
+package com.udemy.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-import com.udemy.bakendninja_2.component.RequestTimeInterceptor;
+import com.udemy.component.RequestTimeInterceptor;
 
 @SuppressWarnings("deprecation")
 @Configuration

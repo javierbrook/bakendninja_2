@@ -1,4 +1,4 @@
-package com.udemy.bakendninja_2;
+package com.udemy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
