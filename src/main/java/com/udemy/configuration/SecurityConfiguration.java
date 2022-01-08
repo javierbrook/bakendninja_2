@@ -1,6 +1,7 @@
 package com.udemy.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,6 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Autowired
+	@Qualifier("userService")
 	private UserDetailsService userService;
 	
 	@Autowired
@@ -27,12 +29,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 			.antMatchers("/css/*", "/imgs/*").permitAll()
 			.anyRequest().authenticated()
 			.and()
-			.formLogin().loginPage("/login").loginProcessingUrl("/logincheck")
+			.formLogin().loginPage("/login").loginProcessingUrl("/loginsuccess")
 			.usernameParameter("username").passwordParameter("password")
 			.defaultSuccessUrl("/loginsuccess").permitAll()
 			.and()
 			.logout().logoutUrl("/logout").logoutSuccessUrl("/login?logout")
-			.permitAll();
+			.permitAll();		
 	}
 	
 }

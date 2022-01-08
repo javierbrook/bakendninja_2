@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import com.udemy.entity.UserRole;
 import com.udemy.repository.UserRepository;
 
-@Service
+@Service("userService")
 public class UserService implements UserDetailsService{
 
 	@Autowired
@@ -31,7 +31,7 @@ public class UserService implements UserDetailsService{
 	}
 	
 	private User buildUser(com.udemy.entity.User user, List<GrantedAuthority> authorities) {
-		return new User(user.getUsername(), user.getPassword(), user.isEnabled(), true, true, true, null);
+		return new User(user.getUsername(), user.getPassword(), user.isEnabled(), true, true, true, authorities);
 	}
 	
 	private List<GrantedAuthority> buildAuthorities(Set<UserRole> userRoles){
