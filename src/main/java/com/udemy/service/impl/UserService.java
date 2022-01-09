@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import com.udemy.entity.UserRole;
 import com.udemy.repository.UserRepository;
 
-@Service("userService")
+@Service
 public class UserService implements UserDetailsService{
 
 	@Autowired

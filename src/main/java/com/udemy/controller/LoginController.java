@@ -24,7 +24,7 @@ public class LoginController {
 		return ViewConstant.LOGIN;
 	}
 	
-	@GetMapping({"/loginsuccess","/"})
+	@GetMapping({"/logincheck","/"})
 	public String loginCheck() {
 		log.info("METHOD: loginCheck()");
 		log.info("Returning to contacts view");
