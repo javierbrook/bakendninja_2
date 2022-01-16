@@ -1,6 +1,7 @@
 package com.udemy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -54,6 +55,7 @@ public class ContactController {
 		return mav;
 	}
 	
+	@PreAuthorize("hasRole('ADMIN')")  // ó '@PreAuthorize("hasAuthority('ROLE_ADMIN')")'
 	@GetMapping("/removecontact")    //Debería usarse Post pero se usa Get para no usar Ajax ni javascript en la vista
 	public String removeContact(@RequestParam(name="id", required = true) int id) {
 		contactService.removedContact(id);
