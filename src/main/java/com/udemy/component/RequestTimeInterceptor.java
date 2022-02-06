@@ -15,14 +15,25 @@ import com.udemy.repository.LogRepository;
 
 import lombok.extern.java.Log;
 
+// TODO: Auto-generated Javadoc
+/** The Constant log. */
 @Log
 @Component("requestTimeInterceptor")
 public class RequestTimeInterceptor extends HandlerInterceptorAdapter  {
 
+	/** The log repository. */
 	@Autowired
 	private LogRepository logRepository;
 	
-	//Se ejecuta 1ro, cuando comeienza la petición
+	/**
+	 * Pre handle. -> Se ejecuta 1ro, cuando comeienza la petición
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @param handler the handler
+	 * @return true, if successful
+	 * @throws Exception the exception
+	 */
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
@@ -30,7 +41,15 @@ public class RequestTimeInterceptor extends HandlerInterceptorAdapter  {
 		return true;
 	}
 
-	//Se ejecuta 2ro, justo antes de comenzar a cargar la página resultante en el navegador
+	/**
+	 * After completion. -> Se ejecuta 2do, justo antes de comenzar a cargar la página resultante en el navegador
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @param handler the handler
+	 * @param ex the ex
+	 * @throws Exception the exception
+	 */
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
