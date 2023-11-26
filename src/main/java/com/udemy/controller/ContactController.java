@@ -59,7 +59,7 @@ public class ContactController {
 		return mav;
 	}
 	
-	@PreAuthorize("hasRole('ADMIN')")  // ó '@PreAuthorize("hasAuthority('ROLE_ADMIN')")'
+	@PreAuthorize("permitAll()")  // ó '@PreAuthorize("hasAuthority('ROLE_ADMIN')")'
 	@GetMapping("/removecontact")    //Debería usarse Post pero se usa Get para no usar Ajax ni javascript en la vista
 	public String removeContact(@RequestParam(name="id", required = true) int id) {
 		contactService.removedContact(id);
