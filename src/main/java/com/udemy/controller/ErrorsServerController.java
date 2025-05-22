@@ -1,6 +1,5 @@
 package com.udemy.controller;
 
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 //@ControllerAdvice     //Esta anotación indica que es un controlador la excepciones (hay que deshabilitarlo para que los errores se vean en Consola)

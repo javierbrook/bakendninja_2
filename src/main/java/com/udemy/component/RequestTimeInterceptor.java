@@ -15,8 +15,10 @@ import com.udemy.repository.LogRepository;
 
 import lombok.extern.java.Log;
 
-// TODO: Auto-generated Javadoc
-/** The Constant log. */
+/**
+ * Interceptor que registra el tiempo de ejecución de las peticiones HTTP y
+ * almacena logs de actividad en la base de datos.
+ */
 @Log
 @Component("requestTimeInterceptor")
 public class RequestTimeInterceptor extends HandlerInterceptorAdapter  {

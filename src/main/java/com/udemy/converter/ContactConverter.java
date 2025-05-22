@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 import com.udemy.entity.Contact;
 import com.udemy.model.ContactModel;
 
-// TODO: Auto-generated Javadoc
 /**
- * The Class ContactConverter.
+ * Clase que proporciona métodos de conversión entre ContactModel y Contact.
+ * Facilita la transformación de objetos entre la capa de presentación y la capa de persistencia.
  */
 @Component
 public class ContactConverter {
